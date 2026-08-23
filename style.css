@@ -175,6 +175,7 @@ section {
   background-color: #0e0e10;
   border: 1px solid #2e2e2e;
   border-radius: 16px;
+  grid-column: 1 / -1;
 }
 
 .texto-boton-img div {
@@ -205,10 +206,6 @@ section {
 .texto-boton-img img {
   width: 55%;
   display: block;
-}
-
-.hero-full {
-  grid-column: 1 / -1;
 }
 
 .foto-horizontal {
@@ -442,23 +439,23 @@ section {
   padding: 24px;
 }
 
-.resumen-fila {
+.resumen-carrito div {
   display: flex;
   justify-content: space-between;
 }
 
-.resumen-total {
+.resumen-carrito div:last-child {
   border-top: 1px solid #2e2e2e;
   padding-top: 16px;
 }
 
-.resumen-total p {
+.resumen-carrito div:last-child p {
   color: #f5f5f5;
   font-size: 20px;
   font-weight: 700;
 }
 
-.btn-comprar {
+.boton {
   display: block;
   text-align: center;
   background-color: #7c3aed;
@@ -470,11 +467,11 @@ section {
   font-weight: 600;
 }
 
-.btn-comprar:hover {
+.boton:hover {
   background-color: #8b5cf6;
 }
 
-.valores-grid {
+.info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
@@ -482,21 +479,21 @@ section {
   padding: 10px 0;
 }
 
-.valores-grid h3 {
+.info-grid h3 {
   font-size: 22px;
   margin-bottom: 10px;
 }
 
-.valores-extra {
+.info-grid div:last-child {
   grid-column: 1 / -1;
   padding-top: 30px;
   border-top: 1px solid #2e2e2e;
 }
 
-.valores-extra ul {
+.info-grid div:last-child ul {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 14px;
   margin-top: 16px;
 }
