@@ -12,7 +12,8 @@ h3 {
 }
 
 p,
-a {
+a,
+li {
   font-family: "Inter", sans-serif;
   color: #b3b3b3;
 }
@@ -45,7 +46,6 @@ header img:first-child {
 }
 
 header h1 {
-  color: #f5f5f5;
   font-size: 22px;
   font-weight: 700;
   margin: 0 35px 0 8px;
@@ -501,7 +501,7 @@ section {
   border: 1px solid #2e2e2e;
   border-radius: 16px;
   gap: 40px;
-  padding: 40px;
+  padding: 3%;
 }
 
 .producto-imagen {
@@ -510,7 +510,7 @@ section {
   border-radius: 12px;
 }
 
-.producto-info {
+.producto div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -518,48 +518,52 @@ section {
   width: 55%;
 }
 
-.producto-info h2:first-of-type {
+.producto div h2:first-of-type {
   font-size: 26px;
 }
 
-.producto-info h2:last-of-type {
+.producto div h2:last-of-type {
   font-size: 32px;
   color: #f5f5f5;
 }
 
-.producto-info .selector {
+.producto div .selector {
   margin-top: 10px;
 }
 
-.producto-info .selector a {
+.producto div .selector a {
   width: 36px;
   height: 36px;
   border: 1px solid #2e2e2e;
   border-radius: 8px;
 }
 
-.producto-info .selector a:hover {
+.producto div .selector a:hover {
   background-color: #1c1c1c;
 }
 
-.producto-descripcion {
+.texto-con-lista {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  background-color: #0e0e10;
+  border: 1px solid #2e2e2e;
+  border-radius: 16px;
+  padding: 3%;
 }
 
-.descripcion-lista ul {
+.texto-con-lista ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.subtitulo {
-  font-size: 28px;
-  margin-bottom: 10px;
+.subtitulo-laptops .laptops {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.producto-descripcion .laptops {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.subtitulo-laptops h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
 }
