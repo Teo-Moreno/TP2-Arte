@@ -91,10 +91,6 @@ footer section {
   padding-bottom: 40px;
 }
 
-.footer-marca {
-  max-width: 280px;
-}
-
 footer h2 {
   color: #f5f5f5;
   font-size: 22px;
@@ -113,7 +109,16 @@ footer p {
   line-height: 1.6;
 }
 
-.footer-columna {
+.texto-gris-chico {
+  border-top: 1px solid #2e2e2e;
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+  color: #707070;
+  font-size: 12px;
+}
+
+footer div {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -127,15 +132,6 @@ footer a {
 
 footer a:hover {
   color: #a78bfa;
-}
-
-.footer-copy {
-  border-top: 1px solid #2e2e2e;
-  margin: 0;
-  padding-top: 20px;
-  text-align: center;
-  color: #707070;
-  font-size: 12px;
 }
 
 main {
@@ -496,4 +492,74 @@ section {
   flex-direction: row;
   gap: 14px;
   margin-top: 16px;
+}
+
+.producto {
+  display: flex;
+  align-items: stretch;
+  background-color: #0e0e10;
+  border: 1px solid #2e2e2e;
+  border-radius: 16px;
+  gap: 40px;
+  padding: 40px;
+}
+
+.producto-imagen {
+  width: 45%;
+  display: block;
+  border-radius: 12px;
+}
+
+.producto-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  width: 55%;
+}
+
+.producto-info h2:first-of-type {
+  font-size: 26px;
+}
+
+.producto-info h2:last-of-type {
+  font-size: 32px;
+  color: #f5f5f5;
+}
+
+.producto-info .selector {
+  margin-top: 10px;
+}
+
+.producto-info .selector a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+}
+
+.producto-info .selector a:hover {
+  background-color: #1c1c1c;
+}
+
+.producto-descripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.descripcion-lista ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subtitulo {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.producto-descripcion .laptops {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
