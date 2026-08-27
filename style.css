@@ -352,7 +352,8 @@ button:hover {
   text-align: center;
 }
 
-.laptop-card a {
+.laptop-card a,
+.lista-imagenes ul li a {
   color: #f5f5f5;
   text-decoration: none;
 }
@@ -605,6 +606,7 @@ form select {
 button {
   align-self: center;
   margin-top: 1%;
+  padding: 1% 2%;
 }
 
 form input {
