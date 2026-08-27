@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technova - Carrito</title>
+    <title>Technova - Formulario</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -23,62 +23,31 @@
     </header>
 
     <main>
-      <section class="carrito-lista">
-        <div class="carrito-item">
-          <img src="img/carrito/1.png" alt="laptop" />
-          <h3>ASUS ROG Zephyrus G14</h3>
-          <p>$1,599.99</p>
-          <ul class="selector">
-            <li><a href="">-</a></li>
-            <li><a href="">1</a></li>
-            <li><a href="">+</a></li>
-          </ul>
-          <h2>X</h2>
-        </div>
-        <div class="carrito-item">
-          <img src="img/carrito/2.png" alt="auriculares" />
-          <h3>Logitech G Pro X</h3>
-          <p>$199.99</p>
-          <ul class="selector">
-            <li><a href="">-</a></li>
-            <li><a href="">1</a></li>
-            <li><a href="">+</a></li>
-          </ul>
-          <h2>X</h2>
-        </div>
-        <div class="carrito-item">
-          <img src="img/carrito/3.png" alt="pad" />
-          <h3>Cooling Pad RGB</h3>
-          <p>$49.99</p>
-          <ul class="selector">
-            <li><a href="">-</a></li>
-            <li><a href="">1</a></li>
-            <li><a href="">+</a></li>
-          </ul>
-          <h2>X</h2>
-        </div>
-      </section>
+      <form action="index.html">
+        <label>Ingresa tus Datos</label>
+        <input type="text" placeholder="Ingresa tu Nombre y Apellido" />
 
-      <section class="resumen-carrito">
-        <div>
-          <p>Subtotal</p>
-          <p>$2.444.997</p>
-        </div>
+        <input type="number" placeholder="Ingresa tu Edad" />
 
-        <div>
-          <p>Envío</p>
-          <p>Gratis</p>
-        </div>
+        <input type="number" placeholder="Ingresa tu Numero de telefono" />
 
-        <div>
-          <p>Total</p>
-          <p>$2.444.997</p>
-        </div>
+        <input type="text" placeholder="Ingresa tu Mail" />
 
-        <div>
-          <a href="form.html" class="boton">Iniciar compra</a>
-        </div>
-      </section>
+        <input type="text" placeholder="Ingresa tu Direccion" />
+
+        <input type="text" placeholder="Ingresa tu Ciudad" />
+
+        <input type="number" placeholder="Ingresa tu Codigo postal" />
+
+        <label>Metodo de pago</label>
+        <select>
+          <option>Efectivo</option>
+          <option>Tarjeta</option>
+          <option>Mercado Pago</option>
+        </select>
+
+        <button type="submit">Terminar Pago</button>
+      </form>
 
       <img class="foto-horizontal" src="img/garantia.png" alt="garantia" />
     </main>
